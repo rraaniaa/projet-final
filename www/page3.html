@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>menage</title>
+  </head>
+  <body>
+    <form onsubmit="insertData(event)">
+      <table>
+        <thead>
+        <tr>
+          <th colspan="2"> خصائص الاسرة و المسكن</th>
+        </tr></thead>
+
+        <tr>
+          <td>
+            <strong><legend>نوع المسكن</legend></strong>
+
+            <div>
+              <input type="radio" name="s1" value="دار عربي" />
+              <label for="s1.1" value="s1.1">دار عربي</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="فيلا او طابق فيلا" />
+              <label for="dewey">فيلا او طابق فيلا</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="شقة بعمارة" />
+              <label for="dewey">شقة بعمارة</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="استوديو" />
+              <label for="dewey">استوديو</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="مسكن فردي / طابق متلاصق" />
+              <label for="dewey">مسكن فردي / طابق متلاصق</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="حوش" />
+              <label for="dewey">حوش</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="قربي,معمرة,قيطون" />
+              <label for="dewey">قربي,معمرة,قيطون,.....</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="مسكن غير معد اصلا للسكنى" />
+              <label for="dewey">مسكن غير معد اصلا للسكنى</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s1" value="مسكن في وكالة" />
+              <label for="dewey">مسكن في وكالة</label>
+            </div>
+
+            <div>
+              <label for="dewey">اخرى :</label>
+              <input type="text" id="s1" name="name" size="10" />
+            </div>
+          </td>
+          <td>
+            <strong><legend>مواد بناء السقف</legend></strong>
+            <div>
+              <input type="radio" name="s2" value="دالة" />
+              <label for="dewey">دالة</label>
+            </div>
+            <div>
+              <input type="radio" name="s2" value="دمس,قرمود,لوح" />
+              <label for="dewey">دمس,قرمود,لوح</label>
+            </div>
+
+            <div>
+              <label for="dewey">مواد اخرى ادكرها</label>
+              <input type="text" id="s2" name="name" />
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <legend>مواد بناء الجدران الخارجية</legend>
+            <div>
+              <input type="radio" name="s3" value="حجر,ياجور" />
+              <label for="dewey">حجر,ياجور...</label>
+            </div>
+
+            <div>
+              <label for="dewey">مواد اخرى ادكرها</label>
+              <input type="text" id="s3" name="name" />
+            </div>
+          </td>
+          <td>
+            <strong><legend>عدد الغرف بالمسكن</legend></strong>
+            <input type="number" id="s4" name="s4" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong><legend>صفة سكن الاسرة</legend></strong>
+            <div>
+              <input type="radio" name="s5" value="ملاكة" />
+              <label for="dewey">ملاكة</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="s5"
+                value="كارية محل على ملك خواص او شركة"
+              />
+              <label for="dewey">كارية محل على ملك خواص او شركة</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s5" value="كارية محل على ملك الدولة" />
+              <label for="dewey">كارية محل على ملك الدولة</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="s5"
+                value="ساكنة مجانا على محل على ملك الدولة"
+              />
+              <label for="dewey">ساكنة مجانا على محل على ملك الدولة</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="s5"
+                value="ساكنة مجانا عند المشغل (محلخواص او شركة)</"
+              />
+              <label for="dewey"
+                >ساكنة مجانا عند المشغل (محلخواص او شركة)</label
+              >
+            </div>
+
+            <div>
+              <input type="radio" name="s5" value="ساكنة مجانا عند الاهل" />
+              <label for="dewey">ساكنة مجانا عند الاهل</label>
+            </div>
+
+            <div>
+              <label for="dewey">حالة اخرى ادكرها</label>
+              <input type="text" id="s5" name="name" />
+            </div>
+          </td>
+          <td>
+            <strong><legend>المسكن على ملك</legend></strong>
+            <div>
+              <input type="radio" name="s6" value="الزوج" />
+              <label for="dewey">الزوج</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s6" value="الزوجة" />
+              <label for="dewey">الزوجة</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="s6"
+                value="اشتراك في الملكية(الاثنين معا)"
+              />
+              <label for="dewey">اشتراك في الملكية(الاثنين معا)</label>
+            </div>
+
+            <div>
+              <label for="dewey">شخص اخر حدده</label>
+              <input type="text" id="s6" name="name" />
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong><legend>عقد الكراء باسم</legend></strong>
+            <div>
+              <input type="radio" name="s7" value="الزوج" />
+              <label for="dewey">الزوج</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s7" value="الزوجة" />
+              <label for="dewey">الزوجة</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="s7"
+                value="اشتراك في الملكية(الاثنين معا)"
+              />
+              <label for="dewey">اشتراك في الملكية(الاثنين معا)</label>
+            </div>
+
+            <div>
+              <label for="dewey">شخص اخر حدده</label>
+              <input type="text" id="s7" name="name" />
+            </div>
+          </td>
+          <td>
+            <strong><legend>من يفع ثمن الكراء</legend></strong>
+            <div>
+              <input type="radio" name="s8" value="الزوج" />
+              <label for="dewey">الزوج</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s8" value="الزوجة" />
+              <label for="dewey">الزوجة</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                name="s8"
+                value="اشتراك في الملكية(الاثنين معا)"
+              />
+              <label for="dewey">اشتراك في الملكية(الاثنين معا)</label>
+            </div>
+
+            <div>
+              <label for="dewey">شخص اخر حدده</label>
+              <input type="text" id="s8" name="name" />
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <strong><legend>المصدرالاساسي للانارة</legend></strong>
+            <div>
+              <input type="radio" name="s9" value="ستاغ" />
+              <label for="dewey">ستاغ</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s9" value="طاقة شمسية" />
+              <label for="dewey">طاقة شمسية</label>
+            </div>
+            <div>
+              <label for="dewey">وسيلة اخرى للانارة</label>
+              <input
+                type="text"
+                id="s9"
+                name="name"
+              />
+            </div>
+          </td>
+          <td>
+            <strong
+              ><legend>المصدرالاساسي للطاقة المستعملة للطبخ</legend></strong
+            >
+            <div>
+              <input type="radio" name="s10" value="شبكة الغاز الطبيعي" />
+              <label for="dewey">شبكة الغاز الطبيعي</label>
+            </div>
+
+            <div>
+              <input type="radio" name="s10" value="غاز قارورة" />
+              <label for="dewey">غاز قارورة</label>
+            </div>
+            <div>
+              <label for="dewey">وسيلة اخرى </label>
+              <input
+                type="text"
+                id="s10"
+                name="name"
+              />
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br />
+
+      <h2><input type="submit" value="تابع" /></h2>
+    </form>
+    <script src="menage.js"></script>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      * {
+        font-family: "Poppins";
+      }
+
+      p {
+        justify-content: center;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+
+        background: #dde5f4;
+      }
+      input[type="submit"] {
+        width: 150px;
+        padding: 10px;
+
+        background-color: green;
+        color: aliceblue;
+      }
+      table{
+	
+  margin: 1rem auto;
+  
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid
+  
+  }
+      
+    
+  thead{
+  
+  background-color: purple;
+  color: white
+  
+  }
+    
+  
+  
+  
+  tbody tr:nth-child(even) {
+    
+  background-color: #ddd
+    
+  }
+    </style>
+  </body>
+</html>

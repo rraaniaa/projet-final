@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>echantillon</title>
+  </head>
+
+  <body onload="recuperation()">
+    <div class='searchBox'>
+    <div>
+      <div>
+       <img src="./téléchargement.png " style="width:400px ;" />
+        <br />
+
+        <br />
+        <br />
+        <br />
+      </div>
+      <h1 dir="rtl" lang="ar" style="text-align: center;">المسح الوطني حول واقع المراة</h1>
+      <h2 dir="rtl" lang="ar" style="text-align: center;">الاستمارة المعيشية :</h2>
+
+      <form onsubmit="insertData(event)">
+        <table>
+          <tr>
+            <td colspan="2">
+              <p><strong>الترخيص </strong></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <div >
+                هـــــــام : تنطبق على هذا المسح أحكام القانون عدد 32 لسنة 1999
+                المؤرخ في 13 أفريل 1999 والمتعلق بالمنظومة الوطنية لإلحصاء وخاصة
+                منها الفصول 5 و 6 و 26: ق الفصل 5 بالسر اإلحصائي الذي يتمثل في
+                عدم الكشف من قبل المصلحة التي تمتلك المعلومة عن المعطيات الشخصية
+                المضمنة باستمارات ويتعل المسوحات اإلحصائية مع اإلشارة إلى أنه ال
+                يمكن إستعمال المعلومات الشخصية ذات الصبغة اإلقتصادية أو المالية
+                لغايات ذات عالقة بالمراقبة الجبائية أو اإلقتصادية أو اإلجتماعية.
+                ّة وفي اآلجال المحددة على استمارات المسوحات اإلحصائية. ويطالب
+                الفصل 6 األشخاص الطبيعيين والمعنويين باإلجابة بكل دق وينص الفصل
+                26 على اإلجراءات الممكن اتخاذها عند اإلمتناع عن اإلجابة على
+                استمارات المسوحات اإلحصائية أو اإلدالء بإجابات منقوصة أو غير
+                صحيحة.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="2">التعريف الخغرافي و الاحصائي للاسرة</th>
+          </tr>
+
+          <tr>
+            <td>
+              <br />
+              <legend>التعريف الجغرافي للاسرة</legend>
+              <br>
+
+              <label for="dewey">الولاية:</label>
+              <input type="text" id="gouv" name="gouv" size="10" required />
+
+              <br />
+              <br />
+
+              <label for="dewey">العنوان:</label>
+              <input
+                type="text"
+                id="adresse"
+                name="adresse"
+                size="10"
+                required
+              />
+              <br />
+              <br />
+              <label for="dewey">اسم رئيس الاسرة:</label>
+              <input
+                type="text"
+                id="nom-chef-f"
+                name="nom-chef-f"
+                size="10"
+                required
+              />
+              <br />
+              <br />
+
+              <label for="dewey">اسم الفرد المستوجب:</label>
+              <input type="text" id="nom-p" name="nom-p" size="10" required />
+              <br />
+              <br />
+              <legend>التعريف الاحصائي للاسرة</legend>
+
+              <br />
+              <br />
+              <label for="dewey">المنطقة:</label>
+              <input type="text" id="dis" name="dis" size="10" required />
+              <br /><br />
+
+              <label for="tentacles">العدد الرتبي للاسرة</label>
+
+              <input type="number" id="num-m" name="num-m" required min="1" />
+
+              <br />
+              <br />
+
+              <label for="phone">رقم هاتف رئيس الاسرة</label>
+
+              <input
+                type="tel"
+                id="phone-f"
+                name="phone-f"
+                required
+                minlength="8"
+                maxlength="8"
+              />
+
+              <br /><br />
+
+              <label for="phone">رقم هاتف الفرد المستوجب</label>
+
+              <input type="tel" id="phone-p" name="phone-p" required />
+            </td>
+          </tr>
+        </table>
+        <br />
+
+        <h2>
+          <input type="submit" value="تابع" />
+        </h2>
+      </form></div>
+      <p id="afficher_cont"></p>
+
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+
+        input[type="submit"] {
+          width: 150px;
+          padding: 10px;
+
+          background-color: green;
+          color: aliceblue;
+        }
+           
+
+table{
+	
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid
+  
+  }
+      
+    
+  thead{
+  
+  background-color: purple;
+  color: white
+  
+  }
+    
+  
+  th,td{padding:8px 0}
+  
+  tbody tr:nth-child(even) {
+    
+  background-color: #ddd
+    
+  }
+    
+  @media (max-width: 700px){
+.table thead {
+display: none;
+}
+
+.table tr{
+display: block;
+margin-bottom: 40px;
+}
+
+.table td {
+display: block;
+text-align: right;
+}
+
+.table td:before {
+content: attr(data-label);
+float: left;
+font-weight: bold;
+}
+input[type="button"] {
+      width: 60px;
+      padding: 7px;
+
+      background-color: green;
+      color: aliceblue;
+    }
+    
+    .searchBox {
+        position: relative;
+        padding: 10px;
+    }
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #999;
+        background: #fff;
+        padding: 10px;
+    }
+    button {
+        height: 40px;
+        background-color: #555;
+        padding: 0 10px;
+        border: none;
+        color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 9px;
+    }
+    button:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 40px;
+        top: 0px;
+        left: -10px;
+        width: 10px;
+        background: #fff;
+        border-left: 1px solid #999;
+    }
+}
+
+      </style>
+    </div>
+    <script src="database.js"></script>
+    <script src="echantillon.js"></script>
+  </body>
+</html>
